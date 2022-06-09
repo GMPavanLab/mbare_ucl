@@ -1,0 +1,21 @@
+[ defaults ]
+1 2 
+
+[ atomtypes ]
+; bead_type bond_type mass charge part_type V W
+HA       0 72.000 0.000  A 0.00 0.00 
+OA       0 72.000 0.000  A 0.00 0.00 
+CA       0 36.000 0.000  A 0.00 0.00 
+TA       0 72.000 0.000  A 0.00 0.00
+[ nonbond_params ]
+; a_i a_j func c6 c12 
+HA     TA      1 0.3600 eps_hata_ph ;
+HA     HA      1 0.4300 eps_haha_ph ; 
+HA     OA      1 0.4000 eps_haoa_ph ;
+HA     CA      1 0.4000 eps_haca_ph ;
+TA     TA      1 0.3800 eps_tata_ph ;
+TA     OA      1 0.3600 eps_taoa_ph ;
+TA     CA      1 0.3600 eps_taca_ph ;
+CA     CA      1 0.3600 eps_caca_ph ;
+CA     OA      1 0.3800 eps_caoa_ph ;
+OA     OA      1 0.3600 eps_oaoa_ph ;

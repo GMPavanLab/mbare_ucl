@@ -1,0 +1,13 @@
+; Include forcefield parameters
+
+#include "ff.itp"
+#include "MLA_CG.itp"
+
+[ system ]
+; Name
+MLA CG dry 
+
+[ molecules ]
+; Compound        #mols
+MLA		2
+

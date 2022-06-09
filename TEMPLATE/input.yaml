@@ -1,0 +1,12 @@
+continue_from_checkpoint: False
+particles_in_swarm: 150
+walltime_equilibration: 1
+walltime_run: 10
+exec_folder: ""  # string, empty = new directory named after timestamp, filled = continue opti from current state of this given directory
+nb_slots: 30
+nt: 1
+gpu_ids: ""
+gmx_path: gmx
+max_swarm_iterations: 100
+max_swarm_iterations_without_improvement: 10
+sim_kill_delay: 60  # number of seconds after which a simulation will be killed if it did not write in its log file
